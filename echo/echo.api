@@ -1,0 +1,14 @@
+type (
+	Request {
+		Name string `path:"name,options=[you,me]"` // parameters are auto validated
+	}
+
+	Response {
+		Message string `json:"message"`
+	}
+)
+
+service echo-api {
+	@handler EchoHandler
+	get /echo/:name(Request) returns (Response)
+}
