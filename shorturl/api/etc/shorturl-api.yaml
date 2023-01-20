@@ -1,0 +1,5 @@
+Name: shorturl-api
+Host: 0.0.0.0
+Port: 8888
+
+DataSource: root:123@tcp(localhost:13306)/gozero

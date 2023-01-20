@@ -26,8 +26,7 @@ func NewEchoLogic(ctx context.Context, svcCtx *svc.ServiceContext) *EchoLogic {
 func (l *EchoLogic) Echo(req *types.Request) (resp *types.Response, err error) {
 	// todo: add your logic here and delete this line
 	l.Logger.Info(req)
-	ret := &types.Response{
-		Message: req.Name,
-	}
-	return ret, nil
+	resp = new(types.Response)
+	resp.Message = req.Name
+	return
 }

@@ -3,6 +3,7 @@ This project contains different [go-zero](https://github.com/zeromicro/go-zero) 
 
 ### Demos
 1. [echo service](.echo)
+2. [shorturl service](.shorturl)
 
 ### Reference
 - https://github.com/zeromicro/go-zero
